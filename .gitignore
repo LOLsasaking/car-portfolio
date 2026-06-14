@@ -1,0 +1,29 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env*.local
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+.vercel
+source-media/
+
+# --- safety (publish script) ---
+node_modules/
+.next/
+out/
+dist/
+build/
+.vercel/
+*.log
+.DS_Store
+.env
+.env.local
+.env.*.local
+source-media/hero old to new updated.mp4
+source-media/model blender car/10-Car.blend
+source-media/model blender car/10-Car.blend1
+source-media/model blender car/car-raw.glb

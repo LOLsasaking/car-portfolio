@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-bone antialiased;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+::selection {
+  background: rgba(201, 169, 97, 0.35);
+  color: #f5f2ea;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a30;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a961;
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs uppercase tracking-luxe text-gold;
+  }
+
+  .heading-xl {
+    @apply font-serif text-4xl leading-tight md:text-6xl lg:text-7xl;
+  }
+
+  .heading-lg {
+    @apply font-serif text-3xl leading-tight md:text-5xl;
+  }
+
+  .heading-md {
+    @apply font-serif text-2xl md:text-3xl;
+  }
+
+  .hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-gold/40 to-transparent;
+  }
+
+  .gold-button {
+    @apply inline-flex items-center justify-center gap-3 border border-gold/60 px-8 py-4 text-xs uppercase tracking-wide2 text-gold transition-all duration-500 hover:bg-gold hover:text-ink;
+  }
+
+  .ghost-button {
+    @apply inline-flex items-center justify-center gap-3 border border-bone/25 px-8 py-4 text-xs uppercase tracking-wide2 text-bone/80 transition-all duration-500 hover:border-bone hover:text-bone;
+  }
+
+  .glass-panel {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-md;
+  }
+
+  .prose-luxe p {
+    @apply mb-6 text-base leading-relaxed text-bone/75 md:text-lg;
+  }
+}
+
+/* Hide scrollbar for horizontal timeline rails while preserving scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
