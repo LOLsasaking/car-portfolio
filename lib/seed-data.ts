@@ -882,5 +882,5 @@ This Rosso Corsa over Crema example is a two-owner car with full Ferrari Classic
   }),
 ];
 
-export const HERO_VIDEO_URL = "/videos/hero-0813-9.mp4";
+export const HERO_VIDEO_URL = "/videos/hero-old-to-new-v2.mp4";
 export const SIGNATURE_URL = "/images/signature.png";
